@@ -25,6 +25,14 @@ class Basecamp3::TodoList < Basecamp3::Model
   def todos
     @mapped_todos ||= Basecamp3::Todo.all(bucket.id, id)
   end
+  
+  # Returns a list of related todo groups.
+  #
+  # @return [Array<Basecamp3::TodoGroup>]
+  def todo_groups
+    @mapped_todo_groups ||= Basecamp3::TodoGroup.all(bucket.id, id)
+  end
+  
 
   # Returns a paginated list of active TODO lists.
   #

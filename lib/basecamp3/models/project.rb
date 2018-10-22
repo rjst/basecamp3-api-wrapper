@@ -8,7 +8,8 @@ class Basecamp3::Project < Basecamp3::Model
                 :updated_at,
                 :name,
                 :description,
-                :bookmarked
+                :bookmarked,
+                :dock
 
   REQUIRED_FIELDS = %w(name)
 

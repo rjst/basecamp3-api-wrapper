@@ -12,7 +12,8 @@ class Basecamp3::TodoSet < Basecamp3::Model
                 :name,
                 :todolists_count,
                 :completed,
-                :completed_ratio
+                :completed_ratio,
+                :app_url                
 
   # Returns a list of related todo lists.
   #

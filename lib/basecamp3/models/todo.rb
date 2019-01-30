@@ -15,7 +15,8 @@ class Basecamp3::Todo < Basecamp3::Model
                 :content,
                 :description,
                 :starts_on,
-                :due_on
+                :due_on,
+                :app_url                
 
   REQUIRED_FIELDS = %w(content)
 

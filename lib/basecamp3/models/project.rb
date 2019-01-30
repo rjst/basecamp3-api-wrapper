@@ -13,6 +13,12 @@ class Basecamp3::Project < Basecamp3::Model
 
   REQUIRED_FIELDS = %w(name)
 
+  # The bucket for tools and other objects is their project
+  # We assume that a project's bucket is itself
+  def bucket
+    self
+  end
+    
   # Returns a paginated list of active projects (basecamps) visible to the current user sorted by most recently
   # created project (basecamp) first.
   #

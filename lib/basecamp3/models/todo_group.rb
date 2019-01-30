@@ -15,7 +15,8 @@ class Basecamp3::TodoGroup < Basecamp3::Model
                 :name,
                 :description,
                 :completed,
-                :completed_ratio
+                :completed_ratio,
+                :app_url                
 
   REQUIRED_FIELDS = %w(name)
 
